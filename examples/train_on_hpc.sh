@@ -11,4 +11,5 @@
 
 
 module load condaenvs/new/torch2.0_DL
+cd PATH_TO_YOUR_CODE_FOLDER
 python train_on_hpc.py
