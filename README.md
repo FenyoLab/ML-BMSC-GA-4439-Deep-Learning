@@ -87,8 +87,12 @@ As specified above, this should be on **slide** level. One the graph you want to
 notebook if you want.
 
 ## General Guidelines
-- First test your code in an interactive session. We recommand using HPC's ![OnDemand](https://ondemand.hpc.nyumc.org). Make sure that you select `condaenvs` as Anaconda Version and `condaenvs/new/torch2.0_DL` as the env:
+- First test your code in an interactive session using the list of sample tiles (`/gpfs/data/courses/ml2025/labels/sampled_tiles.csv`). We recommand using HPC's ![OnDemand](https://ondemand.hpc.nyumc.org). Make sure that you select `condaenvs` as Anaconda Version and `condaenvs/new/torch2.0_DL` as the env:
 
 ![image](ondemand.png)
+
+- Once you feel that you are ready, organize your code in a single script. There's an example in `examples/train_on_hpc.py`. Make sure that you use all the data in `/gpfs/data/courses/ml2025/labels/tile_list.csv`.
+
+- We recommand you to organize a folder for this homework in your home directory on HPC. Say you have all the code files in `~/dl_homwork`, you can run the training script with `sbatch train_on_hpc.sh`. An output log and an error log will appear in that directory when your job runs. Check status of your job by `squeue -u your_kid` on HPC command line.
 
 
