@@ -84,6 +84,7 @@ and a column `score`.
 - A list of `average_training_loss` and `average_validation_loss` at the end of each epoch. You can also generate a plot for this.
 - An ROC plot (a `.png` file), showing the final performance evaluation of your trained model on your test split. 
 As specified above, this should be on **slide** level. One the graph you want to print the **AUROC** value of this plot.
+- The output log of your final training on HPC.
 - Your code. This can be a `.py` script or a `.ipynb` notebook. You can also integrate the tables and plots in the 
 notebook if you want.
 
