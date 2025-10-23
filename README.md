@@ -9,7 +9,8 @@ You will also learn how to run an experiment in a **high performance computing (
 We will provide scaffolding code and instructions to help you with the task.
 
 ## Introduction
-![Modified from McClintock, D.S., Abel, J.T., Cornish, T.C. (2022). Whole Slide Imaging Hardware, Software, and Infrastructure. In: Parwani, A.V. (eds) Whole Slide Imaging. Springer, Cham. https://doi.org/10.1007/978-3-030-83332-9_2](wsi_diagram.png)
+![image](wsi_diagram.png)
+*Figure based on McClintock, D.S., Abel, J.T., Cornish, T.C. (2022). Whole Slide Imaging Hardware, Software, and Infrastructure. In: Parwani, A.V. (eds) Whole Slide Imaging. Springer, Cham. https://doi.org/10.1007/978-3-030-83332-9_2*
 
 A very common application of machine learning model in digital pathology is to predict an outcome, 
 such as a disease diagnosis, based on scanned whole slide images. The basic concept is no different than the 
