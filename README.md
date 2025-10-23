@@ -86,5 +86,9 @@ As specified above, this should be on **slide** level. One the graph you want to
 - Your code. This can be a `.py` script or a `.ipynb` notebook. You can also integrate the tables and plots in the 
 notebook if you want.
 
+## General Guidelines
+- First test your code in an interactive session. We recommand using HPC's ![OnDemand](https://ondemand.hpc.nyumc.org). Make sure that you select `condaenvs` as Anaconda Version and `condaenvs/new/torch2.0_DL` as the env:
+
+![image](ondemand.png)
 
 
