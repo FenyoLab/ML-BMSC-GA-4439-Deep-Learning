@@ -89,9 +89,25 @@ As specified above, this should be on **slide** level. One the graph you want to
 notebook if you want.
 
 ## General Guidelines
-- First test your code in an interactive session using the list of sample tiles (`/gpfs/data/courses/ml2025/labels/sampled_tiles.csv`). We recommand using HPC's ![OnDemand](https://ondemand.hpc.nyumc.org). Make sure that you select `condaenvs` as Anaconda Version and `condaenvs/new/torch2.0_DL` as the env:
+- First test your code in an interactive session using the list of sample tiles (`/gpfs/data/courses/ml2025/labels/sampled_tiles.csv`). We recommand using HPC's ![OnDemand](https://ondemand.hpc.nyumc.org). There's an enviroment that has all the dependency you need. First of all, when you log in to HPC from a terminal, **on command line**, run:
+```
+module load condaenvs/new/torch2.0_DL
+```
+and then:
+```
+python -m ipykernel install --user --name torch2.0_DL --display-name "Python (torch2.0_DL)"
+```
+**You only have to do this once**. After the kernel is installed for you, you can use the env in an interactive session from ![OnDemand](https://ondemand.hpc.nyumc.org). Make sure that you select `condaenvs` as Anaconda Version and `condaenvs/new/torch2.0_DL` as the env:
 
 ![image](ondemand.png)
+
+When you create a new notebook or open an existing one, select the `torch2.0_DL` kernel:
+
+![image](kernel.png)
+
+If everything works well, you should be able to import torch and see `cuda` available if you requested a gpu when starting the job:
+
+![image](cuda.png)
 
 - Once you feel that you are ready, organize your code in a single script. There's an example in `examples/train_on_hpc.py`. Make sure that you use all the data in `/gpfs/data/courses/ml2025/labels/tile_list.csv`.
 
